@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stylesboot.css">
+</head>
+<body>
+
+    <header class="amazon-header d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+            <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" width="100" class="me-3" alt="Logo">
+            <div class="small lh-1 d-none d-md-block">
+                <strong><i class="bi bi-geo-alt"></i> Atualizar CEP</strong>
+            </div>
+        </div>
+
+        <div class="input-group mx-4 flex-grow-1 d-none d-lg-flex">
+            <button class="btn btn-light dropdown-toggle btn-sm" type="button">Todos</button>
+            <input type="text" class="form-control" placeholder="Pesquisar Amazon.com.br">
+            <button class="btn search-btn"><i class="bi bi-search"></i></button>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 small">
+            <div class="d-none d-md-block">Olá, faça seu login<br></div><div class="d-none d-md-block"><strong>Contas e Listas</strong></div>
+            <div class="d-none d-md-block">Devoluções<br><strong>e Pedidos</strong></div>
+            <div class="fs-4 position-relative">
+                <i class="bi bi-cart3"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark" style="font-size: 10px;">0</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="amazon-nav py-1 shadow-sm">
+        <ul class="nav container-fluid">
+            <li class="nav-item"><a class="nav-link fw-bold" href="#"><i class="bi bi-list"></i> Todos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Venda na Amazon</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ofertas do Dia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mais Vendidos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Livros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Eletrônicos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Prime</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-banner">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bold text-success">Celebre o Mês da Terra</h1>
+                    <p class="fs-5">Comece o dia com produtos com características sustentáveis.</p>
+                    <p class="fw-bold">Frete GRÁTIS Prime <i class="bi bi-truck"></i></p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="bg-white p-3 d-inline-block rounded-circle" style="width: 250px; height: 250px;">
+                        <img src="https://m.media-amazon.com/images/I/51SOqS11dZL._AC_SY145_.jpg" class="mt-4" alt="Eco Products">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="card-container container-fluid mb-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="card amazon-card shadow-sm">
+                    <h5 class="card-title">Ofertas em Mês da Terra</h5>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <img src="https://m.media-amazon.com/images/I/51SOqS11dZL._AC_SY145_.jpg" alt="Notebook">
+                            <span class="badge-offer">15% off</span> Oferta
+                        </div>
+                        <div class="product-item">
+                            <img src="https://m.media-amazon.com/images/I/51SOqS11dZL._AC_SY145_.jpg" alt="Monitor">
+                            <span class="badge-offer">8% off</span> Oferta
+                        </div>
+                        <div class="product-item">
+                            <img src="https://m.media-amazon.com/images/I/71Ar78y955L._AC_SY145_.jpg" alt="Speaker">
+                        </div>
+                        <div class="product-item">
+                            <img src="https://m.media-amazon.com/images/I/71SMLQItkzL._AC_SY145_.jpg" alt="Monitor 2">
+                        </div>
+                    </div>
+                    <a href="#" class="mt-3 text-decoration-none small">Ver mais</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card amazon-card shadow-sm">
+                    <h5 class="card-title">Ofertas melhores avaliadas</h5>
+                    <div class="product-grid">
+                        <div class="product-item text-center">
+                            <img src="https://m.media-amazon.com/images/I/81QsB0GMcyL._AC_SY145_.jpg" alt="TV">
+                            <span class="badge-offer">11% off</span>
+                        </div>
+                        <div class="product-item text-center">
+                            <img src="https://m.media-amazon.com/images/I/615UmEOpLML._AC_SY145_.jpg" alt="Google TV">
+                            <span class="badge-offer">24% off</span>
+                        </div>
+                        <div class="product-item"><img src="https://m.media-amazon.com/images/I/51dBND271dL._AC_SY145_.jpg" alt="Maquina Lavar"></div>
+                        <div class="product-item"><img src="https://m.media-amazon.com/images/I/61oyECDYj-L._AC_SY145_.jpg" alt="Monitor"></div>
+                    </div>
+                    <a href="#" class="mt-3 text-decoration-none small">Ver mais</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card amazon-card shadow-sm">
+                    <h5 class="card-title">Eleve sua rotina de beleza</h5>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <img src="https://images-na.ssl-images-amazon.com/images/G/32/mjgodoy-mediacentral/BelezaPremium-25/pb-make-lowres._SY116_CB776700730_.jpg" alt="Maquiagem">
+                            <p class="small m-0">Maquiagem</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://images-na.ssl-images-amazon.com/images/G/32/mjgodoy-mediacentral/BelezaPremium-25/pb-skincare-lowres._SY116_CB776700730_.jpg" alt="Skincare">
+                            <p class="small m-0">Skincare</p>
+                        </div>
+                        <div class="product-item"><img src="https://images-na.ssl-images-amazon.com/images/G/32/mjgodoy-mediacentral/BelezaPremium-25/pb-frag-lowres._SY116_CB776700730_.jpg" alt="Perfume"></div>
+                        <div class="product-item"><img src="https://images-na.ssl-images-amazon.com/images/G/32/mjgodoy-mediacentral/BelezaPremium-25/pb-hair-lowres._SY116_CB776700730_.jpg" alt="Cabelo"></div>
+                    </div>
+                    <a href="#" class="mt-3 text-decoration-none small">Veja mais</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="login-card shadow-sm mb-4">
+                    <h5 class="fw-bold mb-3">Acesse uma conta para ter a melhor experiência</h5>
+                    <button class="btn btn-amazon-yellow shadow-sm">Fazer login de forma segura</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
