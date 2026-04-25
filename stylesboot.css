@@ -1,0 +1,30 @@
+        body { background-color: #e3e6e6; font-family: Arial, sans-serif; 
+        }
+        
+        .amazon-header { background-color: #131921; color: white; padding: 10px 20px; }
+        .search-btn { background-color: #febd69; border: none; }
+        .search-btn:hover { background-color: #f3a847; }
+        
+        .amazon-nav { background-color: #232f3e; color: white; font-size: 14px; }
+        .amazon-nav .nav-link { color: white !important; }
+
+        .hero-banner {
+            background-color: #a3d9a5; 
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            margin-bottom: -150px; 
+            
+        }
+
+        .card-container { position: relative; z-index: 10; padding: 0 20px; }
+        .amazon-card { border: none; border-radius: 0; padding: 20px; height: 100%; }
+        .card-title { font-weight: bold; font-size: 21px; margin-bottom: 15px; }
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .product-item img { width: 100%; height: auto; object-fit: contain; }
+        .badge-offer { background-color: #cc0c39; color: white; font-size: 12px; padding: 2px 6px; }
+        
+        .login-card { background-color: white; padding: 20px; }
+        .btn-amazon-yellow { background-color: #ffd814; border-color: #fcd200; border-radius: 8px; width: 100%; font-size: 13px; }
+
