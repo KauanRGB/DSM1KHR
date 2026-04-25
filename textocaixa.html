@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+    <br>
+    <button onclick="enviarParaLista()">Enviar para Lista</button>
+
+    <h3>Lista de Mensagens:</h3>
+    <ul id="listaMensagens">
+        <!-- As mensagens aparecerão aqui -->
+    </ul>
+
+    <script>
+        // Função Java Script
+        function enviarParaLista() {
+            // 1. Pega o valor do textarea pelo ID
+            var texto = document.getElementById("mensagem").value;
+            
+            // Validação simples: não adicionar se estiver vazio
+            if (texto.trim() === "") {
+                alert("Por favor, digite algo.");
+                return;
+            }
+
+            // 2. Cria um novo item de lista (<li>)
+            var lista = document.getElementById("listaMensagens");
+            var novoItem = document.createElement("li");
+            
+            // 3. Define o texto do item como o conteúdo do textarea
+            novoItem.textContent = texto;
+            
+            // 4. Adiciona o item à lista (<ul>)
+            lista.appendChild(novoItem);
+            
+            // 5. Limpa o textarea após enviar
+            document.getElementById("mensagem").value = "";
+        }
+    </script>
+
+</body>
+</html>

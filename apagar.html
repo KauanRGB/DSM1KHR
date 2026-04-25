@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        .escondido {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btnToggle">Mostrar Texto</button>
+    <button id="btnToggleEvil">Apagar Texto</button>
+
+    <div id="meuTexto" class="escondido">
+        Tung tung tung tung sahur. Uma anomalia assustadora que só aparece na hora do sahur (refeição antes do amanhecer durante o Ramadã). Dizem que se alguém for chamado para o sahur três vezes e não responder, essa criatura aparece na sua casa. Que medo! Tung tung geralmente soa como batidas em um tambor, assim. Compartilhe com seus amigos que têm dificuldade em acordar para o sahur.
+    </div>
+
+    <script>
+        const btnMostrar = document.getElementById('btnToggle');
+        const btnApagar = document.getElementById('btnToggleEvil');
+        const texto = document.getElementById('meuTexto');
+
+        function mostrar() {
+            texto.classList.remove('escondido');
+        }
+        function esconder() {
+            texto.classList.add('escondido');
+        }
+        btnMostrar.addEventListener('click', mostrar);
+        btnApagar.addEventListener('click', esconder);
+    </script>
+
+</body>
+</html>
