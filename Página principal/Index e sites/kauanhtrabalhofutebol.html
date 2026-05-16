@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Trabalho por Kauan Henrique -->
+<!-- Grande parte dessa atividade utilizou códigos da W3S, fontes no fim. -->
+
+<style>
+body {
+      font-family: sans-serif;
+      margin: 20px 220px 20px 20px; 
+      background: #f4f4f4;
+    }
+
+    table { 
+      border-collapse: collapse; background: #fff; 
+    }
+
+    th, td {
+      border: 1px solid #333; padding: 15px; text-align: center; 
+    }
+
+    .placar-sidebar {
+      position: fixed;
+      right: 0; top: 0;
+      width: 200px; height: 100vh;
+      background: #fff;
+      border-left: 2px solid #ccc;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .jogo-imagem {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; 
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .jogo-imagem img { 
+      width: 40px; height: 40px; 
+    }
+
+            .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 12px;
+        }
+
+  </style>
+</head>
+<body>
+
+  <h1>Brasileirão Betano Série A</h1>
+  <h2>Tabela de Aproveitamento (Últimos 5 jogos)</h2>
+
+  <table>
+      <tr>
+        <th><img src="https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg" width="60"></th>
+        <th><img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg" width="60"></th>
+        <th><img src="https://s.sde.globo.com/media/organizations/2024/10/09/Corinthians_2024_Q4ahot4.svg" width="60"></th>
+        <th><img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg" width="60"></th>
+        <th><img src="https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg" width="60"></th>
+        <th><img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg" width="60"></th>
+        <th><img src="https://s.sde.globo.com/media/organizations/2024/10/09/Corinthians_2024_Q4ahot4.svg" width="60"></th>
+        <th><img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg" width="60"></th>
+      </tr>
+      <tr>
+        <td>10 pts</td>
+        <td>10 pts</td>
+        <td>7 pts</td>
+        <td>7 pts</td>
+        <td>10 pts</td>
+        <td>10 pts</td>
+        <td>7 pts</td>
+        <td>7 pts</td>
+      </tr>
+      <tr>
+        <td>83%</td>
+        <td>83%</td>
+        <td>58%</td>
+        <td>77%</td>
+        <td>83%</td>
+        <td>83%</td>
+        <td>58%</td>
+        <td>77%</td>
+      </tr>
+  </table>
+
+  <aside class="placar-sidebar">
+    <h3 style="text-align: center;">1ª RODADA [resultados puramente ficcionais para exemplo]</h3>
+    
+    <div class="jogo-imagem">
+      <img src="https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg">
+      <span>2 x 2</span>
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg">
+    </div>
+
+    <div class="jogo-imagem">
+      <img src="https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg">
+      <span>1 x 0</span>
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg">
+    </div>
+
+    <div class="jogo-imagem">
+      <img src="https://s.sde.globo.com/media/organizations/2024/10/09/Corinthians_2024_Q4ahot4.svg">
+      <span>0 x 2</span>
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg">
+    </div>
+        <div class="jogo-imagem">
+      <img src="https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg">
+      <span>2 x 2</span>
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg">
+    </div>
+      <div class="jogo-imagem">
+      <img src="https://s.sde.globo.com/media/organizations/2024/10/09/Corinthians_2024_Q4ahot4.svg">
+      <span>0 x 2</span>
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg">
+    </div>
+      <div class="jogo-imagem">
+      <img src="https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg">
+      <span>1 x 0</span>
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg">
+    </div>
+  </aside>
+
+      <footer class="footer">
+        Desenvolvido por Kauan Henrique - Fontes: W3Schools
+    </footer>
+
+</body>
+</html>
+
+<!-- Detalhes que poderiam ser adicionados: Maior detalhe sobre o que os números significam, mais times, mais rodadas, algum plano de fundo, maior polimento e mais informação na interface, adição de um stylesheet de css para colocar os styles, que eu ignorei pelo prol da simplicidade -->
+<!-- Também arrumar alguns erros tipo a tela de aproveitamente ir atrás da sidebar caso você dê muito zoom, ou adicione muitos elementos -->
+<!-- Fontes utilizadas para programação: https://www.w3schools.com/html/html_tables.asp | https://www.w3schools.com/html/html_classes.asp | https://www.w3schools.com/html/html_div.asp | Outros códigos que eu reutilizei de outros códigos -->

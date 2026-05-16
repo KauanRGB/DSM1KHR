@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário AMS - ADS - NOITE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        th, td {
+            border: 1.5px solid #000;
+            padding: 8px;
+            vertical-align: middle;
+        }
+
+        /* Cabeçalhos principais */
+        .header-main {
+            background-color: #000;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .header-year {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+        .header-days {
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Cores de fundo específicas */
+        .bg-green {
+            background-color: #c4d79b;
+        }
+
+        /* Estilo para horários e professores */
+        .time-slot {
+            font-weight: bold;
+        }
+
+        .professor {
+            font-style: italic;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .remota {
+            color: #d35400; /* Laranja discreto para destacar o 'remota' */
+            font-weight: normal;
+        }
+
+        /* Ajuste de colunas vazias */
+        .empty-cell {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="7" class="header-main">AMS - ADS - NOITE</th>
+        </tr>
+
+        <tr>
+            <th colspan="7" class="header-year">1º Ano</th>
+        </tr>
+        <tr class="header-days">
+            <th width="10%"></th>
+            <th width="15%">Segunda-feira</th>
+            <th width="15%">Terça-feira</th>
+            <th width="15%">Quarta-feira</th>
+            <th width="15%">Quinta-feira</th>
+            <th width="15%">Sexta Feira</th>
+            <th width="15%">Sábado</th>
+        </tr>
+
+        <tr>
+            <td class="time-slot">18:30 - 19:20</td>
+            <td class="bg-green"></td>
+            <td>17:40 às 19:20<br><b>Projeto Integrador I</b><br><span class="professor">Cristina Correa</span></td>
+            <td class="bg-green"></td>
+            <td>17:40 às 19:20<br><b>Projeto Integrador I</b><br><span class="professor">Cristina Correa</span></td>
+            <td class="bg-green"></td>
+            <td>8:00 às 9:40 <span class="remota">(remota)</span><br><b>Inteligência Coop. e Mod. de Negócios na era digital</b><br><span class="professor">João Maiellaro</span></td>
+        </tr>
+
+        <tr>
+            <td class="time-slot">19:20 - 21:00</td>
+            <td><b>Língua Inglesa I</b><br><span class="professor">Andreza Maria</span></td>
+            <td rowspan="2"><b>Engenharia de Software</b><br><span class="professor">Wilson Vendramel</span></td>
+            <td rowspan="2"><b>Estrutura de Dados</b><br><span class="professor">Eliane Santiago</span></td>
+            <td><b>Técnicas Avançadas de Programação Web e Mobile</b><br><span class="professor">Jeferson Roberto</span></td>
+            <td><b>Técnicas Avançadas de Programação</b><br><span class="professor">Fabiana Rodrigues</span></td>
+            <td>09:50 às 11:30 <span class="remota">(remota)</span><br><b>Organização de Computadores e Sistemas Operacionais</b><br><span class="professor">Jeferson Roberto</span></td>
+        </tr>
+
+        <tr>
+            <td class="time-slot">21:10 - 22:50</td>
+            <td><b>Interação Humano Computador</b><br><span class="professor">Giane Rodrigues</span></td>
+            <td><b>Matemática Discreta</b><br><span class="professor">Ronaldo Orfão</span></td>
+            <td><b>Técnicas Avançadas de Banco de Dados Relacional e não-Relacional</b><br><span class="professor">Fabiana Rodrigues</span></td>
+            <td>11:40 às 13:20 <span class="remota">(remota)</span><br><b>Gestão Ágil e Projetos de Software</b></td>
+        </tr>
+
+        <tr class="bg-green">
+            <td colspan="7" style="height: 20px;"></td>
+        </tr>
+
+        <tr>
+            <th colspan="7" class="header-year">2º Ano</th>
+        </tr>
+        <tr class="header-days">
+            <th></th>
+            <th>Segunda-feira</th>
+            <th>Terça-feira</th>
+            <th>Quarta-feira</th>
+            <th>Quinta-feira</th>
+            <th>Sexta Feira</th>
+            <th>Sábado</th>
+        </tr>
+
+        <tr>
+            <td class="time-slot">18:30 - 19:20</td>
+            <td class="empty-cell"></td>
+            <td class="empty-cell"></td>
+            <td>17:40 às 19:20<br><b>Projeto Integrador II</b><br><span class="professor">Cristina Correa</span></td>
+            <td class="empty-cell"></td>
+            <td>17:40 às 19:20<br><b>Projeto Integrador II</b><br><span class="professor">Cristina Correa</span></td>
+            <td>08:00 às 09:40 <span class="remota">(remota)</span><br><b>Estatística Aplicada</b><br><span class="professor">Elpídio de Araújo</span></td>
+        </tr>
+
+        <tr>
+            <td class="time-slot">19:20 - 21:00</td>
+            <td><b>Sistemas Distribuídos Aplicados à Internet das Coisas</b><br><span class="professor">Jeferson Roberto</span></td>
+            <td><b>Computação em Nuvem</b></td>
+            <td rowspan="2"><b>Programação Multiplataforma</b><br><span class="professor">Kleber Inácio</span></td>
+            <td><b>Inteligência Artificial e Aprendizagem de Máquina</b><br><span class="professor">Estefania Arata</span></td>
+            <td rowspan="2"><b>Modelagem de Padrões de Projetos</b><br><span class="professor">Jeferson Roberto</span></td>
+            <td>09:50 às 11:30 <span class="remota">(remota)</span><br><b>Business Intelligence e Big Data</b><br><span class="professor">Wilson Vendramel</span></td>
+        </tr>
+
+        <tr>
+            <td class="time-slot">21:10 - 22:50</td>
+            <td><b>Língua Inglesa II</b><br><span class="professor">Andreza Maria</span></td>
+            <td><b>Segurança e Defesa Cibernética</b></td>
+            <td><b>Integração e Entrega Contínua (DevOps)</b><br><span class="professor">Estefania Arata</span></td>
+            <td>11:40 às 13:20 <span class="remota">(remota)</span><br><b>Sistemas de Informação e Tecnologias Emergentes</b><br><span class="professor">Wilson Vendramel</span></td>
+        </tr>
+    </table>
+
+</body>
+</html>
