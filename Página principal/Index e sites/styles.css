@@ -92,7 +92,7 @@ body {
 }
 
 .post-card img {
-    max-width: 500px;
+    max-width: 300px;
     border: 1px solid #333; 
 }
 
@@ -103,3 +103,12 @@ body {
     border: 2px solid #333;
   border-radius: 3px; 
 }
+
+.post-data {
+            display: block;
+            color: #777;
+            font-size: 0.85rem;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
