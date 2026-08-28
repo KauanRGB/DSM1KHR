@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        .resposta {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <p> Quantos segundos tem um minuto? </p>
+
+    <button class="btn-erro">Entre 6 e 7 Segundos</button>
+    <button class="btn-erro">100 Segundos</button>
+    <button class="btn-erro">99 Segundos</button>
+    <button id="btn-acerto">60 Segundos</button>
+
+    <div id="texto-erro" class="resposta erro">
+        Errado, tente novamente.
+    </div>
+    <div id="texto-acerto" class="resposta acerto">
+        Cem mil reais ahoy!!!!
+    </div>
+
+
+    <script>
+
+        const botoesErro = document.querySelectorAll('.btn-erro');
+        const botaoAcerto = document.getElementById('btn-acerto');
+        const divErro = document.getElementById('texto-erro');
+        const divAcerto = document.getElementById('texto-acerto');
+
+        function esconderRespostas() {
+            divErro.classList.remove('show');
+            divAcerto.classList.remove('show');
+        }
+
+        botoesErro.forEach(botao => {
+            botao.addEventListener('click', () => {
+                esconderRespostas();
+                divErro.classList.add('show');
+            });
+        });
+
+        botaoAcerto.addEventListener('click', () => {
+            esconderRespostas();
+            divAcerto.classList.add('show');
+        });
+    </script>
+
+</body>
+</html>

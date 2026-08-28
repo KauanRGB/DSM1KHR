@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        .semaforo {
+            display: none;
+        }
+        .mostrar {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Clique no semáforo</p>
+
+    <!-- Botões (IDs ajustados para bater com o JavaScript) -->
+    <button id="btn-desl">Desligado</button>
+    <button id="btn-verd">Verde</button>
+    <button id="btn-amar">Amarelo</button>
+    <button id="btn-verm">Vermelho</button>
+
+    <!-- Divs (Adicionada a classe .semaforo e corrigidos os IDs para bater com o JS) -->
+<div id="img-desl" class="semaforo mostrar">
+    <img src="semaforo.png" alt="Semáforo Desligado">
+</div>
+<div id="img-verd" class="semaforo">
+    <img src="semaforo1.png" alt="Semáforo Verde">
+</div>
+<div id="img-amar" class="semaforo">
+    <img src="semaforo2.png" alt="Semáforo Amarelo">
+</div>
+<div id="img-verm" class="semaforo">
+    <img src="semaforo3.png" alt="Semáforo Vermelho">
+</div>
+
+    <script>
+        // Seletores de botões
+        const botaoDesligado = document.getElementById('btn-desl');
+        const botaoVerde = document.getElementById('btn-verd');
+        const botaoAmarelo = document.getElementById('btn-amar');
+        const botaoVermelho = document.getElementById('btn-verm');
+
+        // Seletores de imagens/divs
+        const divDesl = document.getElementById('img-desl');
+        const divVerd = document.getElementById('img-verd');
+        const divAmar = document.getElementById('img-amar');
+        const divVerm = document.getElementById('img-verm');
+
+        // Junta todas as divs em uma lista para facilitar a manipulação
+        const todasAsDivs = [divDesl, divVerd, divAmar, divVerm];
+
+        // Função para esconder todas as divs antes de mostrar a correta
+        function esconderSemaforos() {
+            todasAsDivs.forEach(div => {
+                div.classList.remove('mostrar');
+            });
+        }
+
+        // Eventos de clique para cada botão
+        botaoDesligado.addEventListener('click', () => {
+            esconderSemaforos();
+            divDesl.classList.add('mostrar');
+        });
+
+        botaoVerde.addEventListener('click', () => {
+            esconderSemaforos();
+            divVerd.classList.add('mostrar');
+        });
+
+        botaoAmarelo.addEventListener('click', () => {
+            esconderSemaforos();
+            divAmar.classList.add('mostrar');
+        });
+
+        botaoVermelho.addEventListener('click', () => {
+            esconderSemaforos();
+            divVerm.classList.add('mostrar');
+        });
+    </script>
+</body>
+</html>

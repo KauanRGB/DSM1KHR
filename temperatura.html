@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+
+    <label for="celsius">Temperatura em Celsius:</label><br>
+    <!-- Adicionado ID e definido type="number" para melhor usabilidade -->
+    <input type="number" id="celsius" placeholder="Ex: 25">
+    <br><br>
+    
+    <!-- Botão para acionar a conversão -->
+    <button onclick="calculo()">Converter para Fahrenheit</button>
+    
+    <!-- Local para exibir o resultado -->
+    <p id="resultado"></p>
+
+    <script>
+        // Função Java Script para conversão
+        function calculo() {
+            // 1. Obter o valor de Celsius
+            var celsius = document.getElementById('celsius').value;
+            
+            // 2. Aplicar a fórmula: Fahrenheit = (Celsius * 1.8) + 32
+            var fahrenheit = (parseFloat(celsius) * 1.8) + 32;
+            
+            // 3. Exibir o resultado no HTML
+            document.getElementById('resultado').innerText = celsius + " ºC é igual a " + fahrenheit + " ºF";
+        }
+    </script>
+
+</body>
+</html>
