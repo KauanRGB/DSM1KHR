@@ -1,6 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Caixa principal (Rede Social) */
