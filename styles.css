@@ -1,12 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202505/0213/852b7673fae69181d4cc80ddaee2e6010ccf74fd0d3a5e52.jpg?w=440");
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* Caixa principal (Rede Social) */
