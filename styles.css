@@ -1,18 +1,33 @@
+:root {
+  --cyber-bg: #05050a;
+  --cyber-panel: #0d0e15;
+  --cyber-card: #121420;
+  --cyber-neon-cyan: #00f0ff;
+  --cyber-neon-pink: #ff0055;
+  --cyber-text: #e0e0e0;
+  --cyber-muted: #8a8d9e;
+  --cyber-border: #1a1c29;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--cyber-bg);
+  color: var(--cyber-text);
+  min-height: 100vh;
 }
 
 /* Caixa principal (Rede Social) */
 .main-container {
   width: 100%;
   max-width: 1300px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: var(--cyber-panel);
+  border-radius: 4px;
+  border: 1px solid var(--cyber-neon-cyan);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
   overflow: hidden;
 }
 
@@ -22,13 +37,14 @@ body {
 }
 
 .topnav {
-  background-image: url('https://media.istockphoto.com/id/1346401663/pt/foto/nightly-earth-in-the-outer-space-abstract-wallpaper-city-lights-on-planet-earth-at-night.jpg?s=1024x1024&w=is&k=20&c=j9LX2EwT0Eixd_ZFGxcicvwgLTYCE_6BQaZwYNrjlOk=');
+  background-image: linear-gradient(rgba(5, 5, 10, 0.4), rgba(5, 5, 10, 0.8)), url('https://media.istockphoto.com/id/1346401663/pt/foto/nightly-earth-in-the-outer-space-abstract-wallpaper-city-lights-on-planet-earth-at-night.jpg?s=1024x1024&w=is&k=20&c=j9LX2EwT0Eixd_ZFGxcicvwgLTYCE_6BQaZwYNrjlOk=');
   background-size: cover;
   background-position: center;
-  height: 250px; /* Aumentei para destacar a capa */
+  height: 250px;
   display: flex;
   justify-content: center;
   position: relative;
+  border-bottom: 2px solid var(--cyber-neon-cyan);
 }
 
 .nav-container {
@@ -38,10 +54,9 @@ body {
   justify-content: flex-end;
   height: 100%;
   padding-bottom: 10px;
-  
 }
 
-/* Sua imagem circular preservada */
+/* Sua imagem circular preservada com toque neon */
 .topnav img {
   position: absolute;
   left: 5%;
@@ -49,32 +64,37 @@ body {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 3px solid var(--cyber-neon-cyan);
   object-fit: cover;
   z-index: 10;
-  background-color: white;
+  background-color: var(--cyber-panel);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
 }
 
 /* --- SEÇÃO: DESCRIÇÃO --- */
 .description-section {
   padding: 70px 5% 20px 5%;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--cyber-border);
+  background-color: var(--cyber-panel);
 }
 
 .description-section h1 {
   margin: 0;
   font-size: 28px;
+  color: var(--cyber-neon-cyan);
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+  letter-spacing: 1px;
 }
 
 .description-section p {
-  color: #65676b;
+  color: var(--cyber-muted);
   font-size: 16px;
   max-width: 600px;
 }
 
 /* --- SEÇÃO: POSTAGENS --- */
 .posts-section {
-  background-color: #f0f2f5;
+  background-color: #080910;
   padding: 20px 5%;
   display: flex;
   flex-direction: column;
@@ -82,30 +102,41 @@ body {
 }
 
 .post-card {
-  background: white;
+  background: var(--cyber-card);
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  border: 1px solid var(--cyber-border);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease;
+}
+
+.post-card:hover {
+  border-color: var(--cyber-neon-cyan);
 }
 
 .post-card img {
-    max-width: 300px;
-    border: 1px solid #333; 
+  max-width: 300px;
+  border: 1px solid var(--cyber-neon-cyan); 
 }
 
-.post-card h3 { margin-top: 0; }
+.post-card h3 { 
+  margin-top: 0; 
+  color: var(--cyber-neon-pink);
+  text-shadow: 0 0 6px rgba(255, 0, 85, 0.3);
+}
 
 .post-card img:hover {
-  filter: brightness(60%);
-    border: 2px solid #333;
+  filter: brightness(80%) hue-rotate(15deg);
+  border: 2px solid var(--cyber-neon-pink);
   border-radius: 3px; 
+  box-shadow: 0 0 12px rgba(255, 0, 85, 0.4);
 }
 
 .post-data {
-            display: block;
-            color: #777;
-            font-size: 0.85rem;
-            margin-top: -5px;
-            margin-bottom: 10px;
-            font-style: italic;
-        }
+  display: block;
+  color: var(--cyber-muted);
+  font-size: 0.85rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
