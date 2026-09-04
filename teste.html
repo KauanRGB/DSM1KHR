@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylessenha.css">
+<title>Formulário de Cadastro</title>
+</head>
+<body>
+
+<h2>Formulário de Cadastro</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Cadastrar</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fechar">&times;</span>
+  <form class="modal-content" onsubmit="validarLogin(event)">
+    <div class="container">
+      <h1>Cadastrar</h1>
+      <p>Preencha os campos abaixo para acessar.</p>
+      <hr>
+
+      <label for="nome"><b>Nome</b></label>
+      <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+
+      <label for="telefone"><b>Telefone</b></label>
+      <input type="text" placeholder="Digite seu telefone" id="telefone" name="telefone" required>
+
+      <label for="email"><b>E-mail</b></label>
+      <input type="text" placeholder="Digite seu e-mail" id="email" name="email" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite sua senha" id="psw" name="psw" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembrar de mim
+      </label>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+        <button type="submit" class="signupbtn">Entrar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function validarLogin(event) {
+  event.preventDefault();
+
+  var nome = document.getElementById('nome').value.trim();
+  var telefone = document.getElementById('telefone').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var senha = document.getElementById('psw').value;
+
+  if (
+    nome === "Kauan" &&
+    telefone === "111" &&
+    email === "kauan@gmail.com" &&
+    senha === "1234"
+  ) {
+    window.location.href = "index.html";
+  } else {
+    alert("Credenciais incorretas. Tente novamente.");
+  }
+}
+</script>
+
+</body>
+</html>
