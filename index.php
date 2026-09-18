@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Formulário de Cadastro</title>
     <style>
         /* Estilo simples para exibir os dados na tela caso não tenha no CSS */
-        .info-box { margin-top: 20px; padding: 15px; border: 1px solid #28075e; background: #f9f9f9; }
+        .info-box { margin-top: 20px; padding: 15px; border: 1px solid #28075e; background: #28075e; }
     </style>
 </head>
 <body>
